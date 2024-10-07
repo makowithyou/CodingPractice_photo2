@@ -1,0 +1,94 @@
+/* 共通 css */
+:root {
+    --main-bg-color: #FFFFFF;
+    --sub-bg-color: #F5F5F5;
+    --font-color: #333333;
+}
+* {
+    box-sizing: border-box;
+}
+body {
+    /* https://ics.media/entry/200317/#各osのフォント指定はどれがいいか */
+    font-family: "Hiragino Kaku Gothic ProN", "Hiragino Sans", Meiryo, sans-serif;
+    margin: unset;
+}
+img {
+    display: block;
+    width: 100%;
+}
+h1, h2, p, ol, dl, dd {
+    margin: unset;
+    padding: unset;
+}
+h2 {
+    font-weight: bold;
+    font-size: 18px;
+    color: var(--font-color);
+}
+dt {
+    font-weight: bold;
+    font-size: 14px;
+    color: var(--font-color);
+}
+p, li, dd, a, a:visited {
+    font-size: 14px;
+    color: var(--font-color);
+}
+p.copy {
+    font-size: 10px;
+    color: var(--font-color);
+}
+div.container {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+div.inner_container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* 小さい画面 */
+
+/* 小さい画面の両端の余白 */
+header {
+    padding: 0 10px;
+}
+section.index,
+div.images,
+section.detail,
+footer {
+    padding: 0 20px;
+}
+
+/* 各セクションごとの縦の間隔 */
+section.index,
+div.images,
+section.detail {
+    margin: 60px 0;
+}
+
+h1 {
+    align-self: flex-start;
+    margin-top: 60px;
+    margin-bottom: 15px;
+    padding-left: 10px;
+}
+h2 {
+    text-align: center;
+    margin-bottom: 30px;
+}
+ol {
+    border: 1px solid var(--font-color);
+    padding-left: 20px;
+}
+header img {
+    width: 180px;
+}
+section.index div.inner_container,
+section.detail div.inner_container {
+    background-color: var(--sub-bg-color);
+    padding: 40px 20px;
+}
+/* 大きい画面 */
+@media (min-width: 1024px) {
+}
