@@ -90,15 +90,16 @@ ol {
 li:not(:last-child) {
     padding-bottom: 20px;
 }
+dl {
+    padding-bottom: 40px;
+    margin-bottom: 40px;
+    border-bottom: 1px solid var(--font-color);
+}
 dt {
     margin-bottom: 7px;
 }
-dd {
+dd:not(:last-child) {
     margin-bottom: 17px;
-}
-hr {
-    border: 0.5px solid var(--font-color);
-    margin: 40px 0;
 }
 header img {
     width: 180px;
@@ -144,9 +145,11 @@ section.detail h2 + div {
     display: flex;
 }
 section.detail dl {
-    width: 30%;
-}
-section.detail hr {
-    margin: 0 40px;
+    width: 50%;
+    padding-bottom: unset;
+    margin-bottom: unset;
+    border-bottom: unset;
+    border-right: 1px solid;
+    margin-right: 40px;
 }
 }
