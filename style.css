@@ -95,11 +95,8 @@ dl {
     margin-bottom: 40px;
     border-bottom: 1px solid var(--font-color);
 }
-dt {
-    margin-bottom: 7px;
-}
 dd:not(:last-child) {
-    margin-bottom: 17px;
+    margin-bottom: 10px;
 }
 header img {
     width: 180px;
