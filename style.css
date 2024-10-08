@@ -78,7 +78,7 @@ h2 {
     margin-bottom: 30px;
 }
 p {
-    margin: 20px 0;
+    margin-bottom: 20px;
 }
 ol {
     border: 1px solid var(--font-color);
