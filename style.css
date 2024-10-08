@@ -144,7 +144,7 @@ section.detail h2 + div {
     display: flex;
 }
 section.detail dl {
-    width: 50%;
+    width: 30%;
     padding-bottom: unset;
     margin-bottom: unset;
     border-bottom: unset;
