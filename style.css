@@ -77,9 +77,28 @@ h2 {
     text-align: center;
     margin-bottom: 30px;
 }
+p {
+    margin: 20px 0;
+}
 ol {
     border: 1px solid var(--font-color);
-    padding-left: 20px;
+    padding: 30px 32px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+li:not(:last-child) {
+    padding-bottom: 20px;
+}
+dt {
+    margin-bottom: 7px;
+}
+dd {
+    margin-bottom: 17px;
+}
+hr {
+    border: 0.5px solid var(--font-color);
+    margin: 40px 0;
 }
 header img {
     width: 180px;
@@ -89,6 +108,45 @@ section.detail div.inner_container {
     background-color: var(--sub-bg-color);
     padding: 40px 20px;
 }
+div.images img {
+    margin-bottom: 15px;
+}
+footer p.copy {
+    margin: 15px 0;
+    text-align: center;
+}
+
+
 /* 大きい画面 */
 @media (min-width: 1024px) {
+h1,
+section.index,
+div.images,
+section.detail{
+    padding: unset;
+}
+section.index div.inner_container,
+section.detail div.inner_container {
+    padding: 60px;
+}
+div.images div.inner_container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+div.images img {
+    width: 392px;
+}
+div.images img:nth-last-child(-n + 2) {
+    margin-bottom: unset;
+}
+section.detail h2 + div {
+    display: flex;
+}
+section.detail dl {
+    width: 30%;
+}
+section.detail hr {
+    margin: 0 40px;
+}
 }
