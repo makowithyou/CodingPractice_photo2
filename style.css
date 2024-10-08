@@ -144,11 +144,12 @@ section.detail h2 + div {
     display: flex;
 }
 section.detail dl {
-    width: 30%;
+    width: 42%;
     padding-bottom: unset;
     margin-bottom: unset;
     border-bottom: unset;
     border-right: 1px solid;
     margin-right: 40px;
+    padding-right: 70px;
 }
 }
