@@ -110,7 +110,8 @@ div.images img {
     margin-bottom: 15px;
 }
 footer p.copy {
-    margin: 15px 0;
+    padding-top: 15px;
+    margin-bottom: 15px;
     text-align: center;
 }
 
@@ -120,7 +121,8 @@ footer p.copy {
 h1,
 section.index,
 div.images,
-section.detail{
+section.detail,
+footer{
     padding: unset;
 }
 section.index div.inner_container,
